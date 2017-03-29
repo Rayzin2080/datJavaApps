@@ -1,0 +1,21 @@
+package projectAdmin;
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is your password?");
+		String username = scan.next();
+		System.out.println("What is your password?");
+		String passwd = scan.next();
+		System.out.print("Ok");
+		System.out.print(".");
+		System.out.print(".");
+		System.out.println(".");
+		scan.close();
+	}
+
+}

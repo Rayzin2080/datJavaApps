@@ -1,0 +1,33 @@
+package projectAdmin;
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is your username?");
+		String username = scan.next();
+		System.out.println("What is your password?");
+		String passwd = scan.next();
+		System.out.print("Ok");
+		System.out.print(".");
+		System.out.print(".");
+		System.out.println(".");
+		System.out.println("Username: " + username + "  Password: " + passwd);
+		System.out.println("Is this correct? (true/false)");
+		Boolean uPConfirm = scan.nextBoolean();
+		scan.close();
+		if(uPConfirm == true) {
+			System.out.println("Good");
+			
+		}
+		else {
+			System.out.println("Oops...  Sorry about that...");
+			System.out.println(";(");
+		}
+		
+	}
+
+}
