@@ -1,0 +1,30 @@
+package projectAdmin;
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is your username?");
+		String username = scan.next();
+		System.out.println("What is your password?");
+		String passwd = scan.next();
+		System.out.println("Ok...");
+		System.out.println("Username: " + username + "  Password: " + passwd);
+				String usernameParts[] = username.split("_");
+				if(usernameParts[0] = "ADMIN") {
+					
+					System.out.println("Looks like you're an admin!");
+					System.out.println("Welcome ADMIN." + usernameParts[1]);
+					scan.close();
+		}
+				else {
+					scan.close();
+					
+		}
+		
+	
+	}
+}

@@ -13,18 +13,14 @@ public class Main {
 		String passwd = scan.next();
 		System.out.println("Ok...");
 		System.out.println("Username: " + username + "  Password: " + passwd);
-				String usernameParts[] = username.split("_");
-				System.out.println(usernameParts[0]);
-				if(usernameParts[0] == "ADMIN") {
-					
-					System.out.println("Looks like you're an admin!");
-					System.out.println("Welcome ADMIN." + usernameParts[1]);
+		int isAdmin = username.indexOf("ADMIN");
+		System.out.println(isAdmin); //0 if admin  -1 if not admin
+		if(isAdmin == 0) {
+			System.out.println("You seem to be an admin");
+			String[] adminName = username.split("ADMIN");
+			System.out.println("Welcome ADMIN " + adminName[1]);
 		}
-				else {
-					
-					
-		}
-		
-	scan.close();
+		scan.close();
 	}
+	
 }
