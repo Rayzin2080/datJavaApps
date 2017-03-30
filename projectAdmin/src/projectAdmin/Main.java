@@ -20,6 +20,7 @@ public class Main {
 			String[] adminName = username.split("ADMIN");
 			System.out.println("Welcome ADMIN " + adminName[1]);
 		}
+	
 		scan.close();
 	}
 	
